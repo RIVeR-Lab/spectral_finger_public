@@ -1,0 +1,5 @@
+string request
+---
+geometry_msgs/WrenchStamped[] wrench_data
+sensor_msgs/JointState[] finger_data
+int64 count

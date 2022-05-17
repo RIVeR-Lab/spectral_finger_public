@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find ur_robot_driver)/launch/ur3e_bringup.launch">
+    <arg name="robot_ip" value="10.0.65.7"/>
+    <arg name="use_tool_communication" value="true"/>
+</include>
+</launch>

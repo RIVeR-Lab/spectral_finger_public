@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Launch Intel Realsense Driver -->
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+    <!-- Launch UR3e Driver -->
+    <include file="$(find spectral_finger_planner)/launch/ur3e.launch"/>
+    <!-- Launch UR3e Motion Planner -->
+    <node name="motion_planner" pkg="spectral_finger_planner" type="ur3e_planner.py"/>
+    <!-- Launch Spectrometer Driver -->
+    <node name="spectrometer_driver" pkg="spectra_wiz" type="stellarnet_driver.py"/>
+</launch>

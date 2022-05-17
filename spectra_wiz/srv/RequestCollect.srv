@@ -1,0 +1,4 @@
+string request
+---
+Spectra[] data
+int64 count
